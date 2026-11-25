@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ERALUNE — ювелирный бутик в Томске | Украшения, серьги, колье, браслеты</title>
+  <meta name="description" content="ERALUNE — бутик изысканных украшений в ТРЦ «Изумрудный город», Томск. Серьги, колье и подвески, браслеты, кольца и украшения с жемчугом. Ежедневно 10:00–22:00. +7 929 374-79-27.">
+  <meta name="theme-color" content="#F8F6F1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="canonical" href="./">
+
+  <!-- Open Graph (укажите абсолютный адрес сайта в og:url и og:image после публикации) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="ERALUNE">
+  <meta property="og:title" content="ERALUNE — искусство быть особенной">
+  <meta property="og:description" content="Украшения, в которых живут ваши чувства, воспоминания и индивидуальность. Бутик в ТРЦ «Изумрудный город», Томск.">
+  <meta property="og:image" content="assets/img/storefront.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="547">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Шрифты: антиква Cormorant Garamond (300–600) + гротеск Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@400;500;600&display=swap&subset=cyrillic">
+
+  <!-- Главное фото загружается в приоритете (LCP) -->
+  <link rel="preload" as="image" type="image/avif"
+        imagesrcset="assets/img/hero-lariat-400.avif 400w, assets/img/hero-lariat-720.avif 720w, assets/img/hero-lariat-1018.avif 1018w"
+        imagesizes="100vw" fetchpriority="high">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JewelryStore",
+    "name": "ERALUNE",
+    "image": "assets/img/storefront.jpg",
+    "telephone": "+7 929 374-79-27",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Комсомольский проспект, 13Б, ТРЦ «Изумрудный город», 1 этаж",
+      "addressLocality": "Томск",
+      "postalCode": "634003",
+      "addressCountry": "RU"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "10:00",
+      "closes": "22:00"
+    },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "27", "bestRating": "5" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <div id="header-root"></div>
+
+  <main id="main" tabindex="-1">
+    <noscript>
+      <section class="container noscript">
+        <h1>ERALUNE — ювелирный бутик</h1>
+        <p>ТРЦ «Изумрудный город», Комсомольский проспект, 13Б, 1 этаж, Томск, 634003.</p>
+        <p>Телефон: <a href="tel:+79293747927">+7 929 374-79-27</a>. Ежедневно с 10:00 до 22:00.</p>
+        <p>Для работы каталога и корзины включите JavaScript.</p>
+      </section>
+    </noscript>
+  </main>
+
+  <div id="footer-root"></div>
+  <div id="overlays-root"></div>
+  <div class="toast-region" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Данные (редактируемые) -->
+  <script src="js/config.js" defer></script>
+  <script src="js/data/images.js" defer></script>
+  <script src="js/data/products.js" defer></script>
+  <!-- Анимации: GSAP + ScrollTrigger + Lenis -->
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/vendor/lenis.min.js" defer></script>
+  <!-- Ядро -->
+  <script src="js/core/utils.js" defer></script>
+  <script src="js/core/motion.js" defer></script>
+  <script src="js/core/store.js" defer></script>
+  <!-- Компоненты -->
+  <script src="js/components/Header.js" defer></script>
+  <script src="js/components/Hero.js" defer></script>
+  <script src="js/components/Categories.js" defer></script>
+  <script src="js/components/ProductCard.js" defer></script>
+  <script src="js/components/ProductCatalog.js" defer></script>
+  <script src="js/components/ProductDetails.js" defer></script>
+  <script src="js/components/Cart.js" defer></script>
+  <script src="js/components/Favorites.js" defer></script>
+  <script src="js/components/Search.js" defer></script>
+  <script src="js/components/Gallery.js" defer></script>
+  <script src="js/components/About.js" defer></script>
+  <script src="js/components/Why.js" defer></script>
+  <script src="js/components/Collections.js" defer></script>
+  <script src="js/components/Contacts.js" defer></script>
+  <script src="js/components/Footer.js" defer></script>
+  <!-- Страницы и маршрутизация -->
+  <script src="js/core/router.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
