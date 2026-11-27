@@ -1,7 +1,9 @@
-/* ERALUNE — Contacts: «Будем рады видеть вас» + чистая карта без рекламы */
+/* ERALUNE — Contacts: «Будем рады видеть вас» + чистая карта без рекламы + Telegram */
 (function (E) {
   'use strict';
   const U = E.utils;
+
+  const TG_ICON = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 5 2 12.5l7 2.2M21 5l-3.2 15-6.8-5.3M21 5 9 14.7m0 0V20l3.2-3.4"/></svg>';
 
   function buildCleanMapSrc(coords) {
     const lon = coords ? Number(coords[0]) : 84.978515;
@@ -36,6 +38,7 @@
           <div class="contacts__btns" data-reveal>
             <a class="btn btn--dark" href="${U.tel()}">${U.icon('phone')}Позвонить</a>
             ${C.whatsapp ? `<a class="btn btn--line" href="${U.wa('Здравствуйте! Пишу с сайта ERALUNE.')}" target="_blank" rel="noopener">${U.icon('whatsapp')}WhatsApp</a>` : ''}
+            ${C.telegram ? `<a class="btn btn--line" href="${U.esc(C.telegram)}" target="_blank" rel="noopener">${TG_ICON}Telegram</a>` : ''}
             ${C.vk ? `<a class="btn btn--line" href="${U.esc(C.vk)}" target="_blank" rel="noopener">${U.icon('vk')}ВКонтакте</a>` : ''}
             <a class="btn btn--line" href="${U.mapLink()}" target="_blank" rel="noopener">${U.icon('route')}Маршрут</a>
           </div>

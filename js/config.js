@@ -31,7 +31,7 @@ window.ERALUNE.config = {
   vk: '',
 
   // Дополнительно (необязательно): Telegram, Instagram и т.п.
-  telegram: '',
+  telegram: 'https://t.me/eralunejewelry',
 
   hours: 'Ежедневно с 10:00 до 22:00',
   hoursShort: 'Ежедневно, 10:00–22:00',
